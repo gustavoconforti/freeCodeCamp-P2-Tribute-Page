@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+    margin:0; 
+    padding:0; 
+    scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 565px) {
+    #header-ul {
+        margin-left:  1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    #container-1, #container-2, #container-3, #footer-div {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    #pink-h2 {
+        margin-top: 3rem;
+    }
+
+    #grid c {
+        grid-column: span 8 / span 8;
+    }
+
+    #footer-grid #footer-cell {
+        grid-column: span 2 / span 2;
+        margin-bottom: 2rem; 
+    }
+
+    #footer-grid #last-cell {
+        grid-column: span 8 / span 8;
+    }
+  }
+
+/* Position options */
+.fixed {
+    position: fixed;
+}
+
+.top-0 {
+    top: 0px;
+}
+
+.left-0 {
+    top: 0px;
+}
+.right-0 {
+    top: 0px;
+}
+
+/* State options */
+.hover\:text-black:hover {
+    color: black;
+}
+
+.hover\:text-orange-600:hover {
+    color: rgb(234 88 12);
+}
+
+.hover\:font-bold:hover {
+    font-weight: 700;
+}
+
+.hover\:bg-white:hover {
+    background-color: white;
+}
+
+.hover\:bg-pink-200:hover {
+    background-color: rgb(251 207 232);
+}
+
+.hover\:bg-green-200:hover {
+    background-color: rgb(187 247 208);
+}
+
+.hover\:bg-red-700:hover {
+    background-color: rgb(185 28 28);
+}
+
+.hover\:underline:hover {
+    text-decoration-line: underline;
+}
+
+.active\:bg-red-800:active {
+    background-color: rgb(153 27 27);
+}
+
+/* Display options */
+.flex {
+    display: flex;
+}
+
+.flex-auto	{
+    flex: 1 1 auto;
+}
+
+.flex-wrap {
+flex-wrap: wrap;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-8 {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+}
+
+.col-span-1	{
+    grid-column: span 1 / span 1;
+}
+
+.col-span-2	{
+    grid-column: span 2 / span 2;
+}
+
+.col-span-8	{
+    grid-column: span 8 / span 8;
+}
+
+.col-span-3	{
+    grid-column: span 3 / span 3;
+}
+
+.col-span-4	{
+    grid-column: span 4 / span 4;
+}
+
+.col-span-5	{
+    grid-column: span 5 / span 5;
+}
+
+.gap-x-6 {
+    column-gap: 1.5rem;
+}
+
+.gap-x-12 {
+    column-gap: 3rem;
+}
+
+/* Margin options */
+.m-0 {
+margin: 0px;
+}
+
+.mx-12 {
+    margin-left: 3rem; /* 48px */
+    margin-right: 3rem; /* 48px */
+}
+
+.mt-1	{
+    margin-top: 0.5rem; 
+}
+
+.mt-10	{
+    margin-top: 2.5rem;
+}
+
+.mb-1	{
+    margin-bottom: 0.5rem; 
+}
+
+.mb-2	{
+    margin-bottom: 1rem; 
+}
+
+.mb-8	{
+    margin-bottom: 2rem; 
+}
+
+.mb-16	{
+    margin-bottom: 4rem; 
+}
+/* Border options */
+.border-red-600 {
+    --tw-border-opacity: 1;
+    border-color: rgba(220, 38, 38, var(--tw-border-opacity));
+}
+
+.border-t-2 {
+    border-top-width: 2px;
+}
+
+.border-t-black {
+    border-top-color: rgb(0 0 0);
+}
+
+.border-t-white {
+    border-top-color: white;
+}
+
+
+.border-t-solid {
+    border-top-style: solid;
+}
+
+/* Padding options */
+.p-3 {
+    padding: 0.75rem;
+}
+
+.p-12 {
+    padding: 3rem;
+}
+
+.pb-12	{
+    padding-bottom: 3rem;
+}
+
+.px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Width options */
+.w-auto {
+width: auto;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-w-full {
+    max-width: 100%;
+}
+
+.max-w-xxs {
+    max-width: 15rem;
+}
+
+.max-w-4xl {
+    max-width: 56rem; /* 896px */
+}
+
+/* Height options */
+.min-h-8 {
+    min-height: 2rem;
+}
+
+.min-h-full {
+    min-height: 100%;
+}
+
+/* Content options */
+.justify-center {
+    justify-content: center;
+}
+/* Background options */
+.bg-black {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.bg-pink-200 {
+    background-color: rgb(251 207 232);
+}
+
+.bg-green-200 {
+    background-color: rgb(187 247 208);
+}
+
+.bg-yellow-400 {
+    background-color: rgb(250 204 21);
+}
+
+/* Font options */
+.text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text-7xl {
+    font-size: 4.5rem; /* 72px */
+    line-height: 1;
+}
+
+.text-white {
+    color: rgb(255 255 255);
+}
+
+.text-neutral-600 {
+    color: rgb(82 82 82);
+}
+
+.text-black {
+    color: black;
+}
+
+.text-red-600 {
+    color: rgb(220 38 38);
+}
+
+.text-sky-800 {
+    color: rgb(7 89 133);
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.no-underline {
+    text-decoration-line: none;
+}
+
+/* List options */
+.list-none {
+    list-style-type: none;
+}
